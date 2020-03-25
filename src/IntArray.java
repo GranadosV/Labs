@@ -1,10 +1,31 @@
 public class IntArray {
-    int array[];
-    int capacity = 10;  //how much space is allocated
-    int numElems = 0;  //how many elements added
+    int intArray[];
+    int capacity;
+    int numElems;
 
-    public IntArray(int capacity) {
-        array = new int[capacity];
+    public IntArray() {
+        intArray = new int[10];
     }
 
+    public IntArray(int initialCapacity) {
+        initialCapacity = 10;
+        intArray = new int[initialCapacity];
+    }
+
+    public void add (int index, int elem) {
+        intArray[index, elem];
+        numElems++;
+    }
+
+    @Override
+    public void toString () {
+        for(int i: intArray) {
+            System.out.println(intArray[i]);
+        }
+    }
+
+    public static void main(String[] args) {
+        IntArray arr = new IntArray();
+
+    }
 }
